@@ -26,14 +26,16 @@ object CallFunctionOnce {
       println("Hello")
     }
 
+
   @main
   def main(): Unit =
     val shared: Future[Unit] = computation
-    val first  = shared
-    val second = shared
+    val first  = computation
+    val second = computation
     println("world")
     Thread.sleep(500)
 }
+
 
 object CallFunctionWithoutFuture {
   def computation: Unit = println("Hello")

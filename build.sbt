@@ -3,11 +3,11 @@ ThisBuild / scalaVersion := "3.10.0"
 
 ThisBuild / version := "0.1.0"
 
-ThisBuild / organization := "com.example"
+ThisBuild / organization := "fp.scala"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "cats-effect-example",
+    name := "fp-scala",
 
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-core"   % "2.13.0",
